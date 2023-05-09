@@ -92,6 +92,7 @@ body {
   font-family: 'Muller', sans-serif;
   font-weight: 400;
   background-color: #E5E5E5;
+  overflow-wrap: break-word;
 }
 
 
@@ -132,6 +133,7 @@ body {
 
 .header-personal-link {
   display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   color: var(--yellow2);
@@ -177,6 +179,10 @@ body {
   margin-right: auto;
 }
 
+.header-list-item {
+  max-width: 116px;
+}
+
 .header-list-item:not(:last-child) {
   margin-right: 45px;
 }
@@ -191,6 +197,7 @@ body {
 }
 
 .header-nav-link {
+  max-width: 116px;
   font-size: 16px;
   line-height: 16px;
   color: var(--gray);
@@ -259,11 +266,13 @@ body {
 }
 
 .header-want-btn {
+  max-width: 150px;
   margin-right: 40px;
   padding: 13px 20px;
 }
 
 .header-call-btn {
+  max-width: 200px;
   padding: 13px 20px;
 }
 
@@ -377,12 +386,12 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: var(--yellow1);
-  transition: padding-right 0.3s ease-in-out;
+  transition: margin-right 0.3s ease-in-out;
 }
 
 
 .offer-more-link:hover {
-  padding-right: 26px;
+  margin-right: 26px;
 }
 
 .offer-more-link:active {
@@ -473,16 +482,16 @@ body {
 }
 
 .services-link-note {
-  padding-right: 5px;
-  transition: padding-right 0.3s ease-in-out;
+  margin-right: 5px;
+  transition: margin-right 0.3s ease-in-out;
 }
 
 .services-link:hover .services-link-note {
-  padding-right: 16px;
+  margin-right: 16px;
 }
 
 .services-link:active .services-link-note {
-  padding-right: 5px;
+  margin-right: 5px;
 }
 
 .paragraph-services {
@@ -666,16 +675,6 @@ body {
   color: var(--yellow2);
 }
 
-.placing-last-container {
-  max-width: 374px;
-  min-height: 450px;
-  padding: 373px 55px 27px 54px;
-  border-radius: 15px;
-  background-image: url('../img/placing-ninth.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* братик я короче не сделал darken для этого блока, потому что у меня svg в html потому что я ссылку делал, я знаю как я бы это сделал но просто лениво в третий раз все переделывать)))*/
 .placing-list-last-link {
   position: relative;
@@ -730,6 +729,7 @@ body {
 }
 
 .want-form {
+  max-width: 170px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -792,6 +792,8 @@ body {
 
 .contacts-mini-wrapper {
   display: flex;
+  min-width: 375px;
+  justify-content: space-between;
 }
 
 .contacts-title {
@@ -802,22 +804,6 @@ body {
   color: var(--black);
 }
 
-.contacts-first-title {
-  margin-right: 83px;
-}
-
-.contacts-second-title {
-  margin-right: 47px;
-}
-
-.contacts-third-title {
-  margin-right: 93px;
-}
-
-.contacts-fourth-title {
-  margin-right: 74px;
-}
-
 .contacts-text {
   font-weight: 400;
   font-size: 16px;
@@ -826,12 +812,12 @@ body {
 }
 
 .contacts-adress {
-  max-width: 229px;
+  width: 223px;
   font-style: normal;
 }
 
 .contacts-link-wrapper {
-  max-width: 229px;
+  width: 223px;
 }
 
 .contacts-phone-wrapper {
@@ -858,7 +844,7 @@ body {
 }
 
 .contacts-schedule {
-  max-width: 214px;
+  width: 223px;
 }
 
 .contacts-button {
